@@ -4,10 +4,10 @@ app = Flask(__name__)
 @app.route('/', methods=['GET'])
 def inicio():
 return jsonify({
-'estado': 'Exitoso',
+'estado': 'Exitoso, prueba realizada con exito',
 'mensaje': '¡API desplegada con éxito en la Nube!',
 'materia': 'Servicios en la Nube',
-'version': '1.0.0',
+'version': '2.0.0',
 })
 if __name__ == '__main__':
 port = int(os.environ.get('PORT', 5000))
